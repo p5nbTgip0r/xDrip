@@ -88,7 +88,7 @@ public class StatusLine {
 
             final StatsResult statsResult = new StatsResult(Pref.getInstance(), Pref.getBooleanDefaultFalse("extra_status_stats_24h"));
 
-            if (Pref.getBoolean("status_line_avg", false)) {
+            /*if (Pref.getBoolean("status_line_avg", false)) {
                 append(sb, statsResult.getAverageUnitised());
             }
             if (Pref.getBoolean("status_line_a1c_dcct", false)) {
@@ -108,7 +108,7 @@ public class StatusLine {
             }
             if (Pref.getBoolean("status_line_stdev", false)) {
                 append(sb, statsResult.getStdevUnitised());
-            }
+            }*/
             if (Pref.getBoolean("status_line_carbs", false)) {
                 append(sb, "Carbs:" + Math.round(statsResult.getTotal_carbs()));
             }
