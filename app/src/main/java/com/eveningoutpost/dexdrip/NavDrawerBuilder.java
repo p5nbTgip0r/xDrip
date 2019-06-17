@@ -132,11 +132,11 @@ public class NavDrawerBuilder {
         }
 
         if (Experience.gotData()) {
-            this.nav_drawer_options.add(context.getString(R.string.statistics));
-            this.nav_drawer_intents.add(new Intent(context, StatsActivity.class));
+            //this.nav_drawer_options.add(context.getString(R.string.statistics));
+            //this.nav_drawer_intents.add(new Intent(context, StatsActivity.class));
 
-            this.nav_drawer_options.add(context.getString(R.string.history));
-            this.nav_drawer_intents.add(new Intent(context, BGHistory.class));
+            //this.nav_drawer_options.add(context.getString(R.string.history));
+            //this.nav_drawer_intents.add(new Intent(context, BGHistory.class));
         }
 
         this.nav_drawer_options.add(context.getString(R.string.settings));

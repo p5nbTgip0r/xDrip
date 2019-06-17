@@ -590,43 +590,50 @@
                     android:dependency="extra_status_line"
                     android:key="status_line_avg"
                     android:summary="@string/todays_average_value"
-                    android:title="@string/average" />
+                    android:title="@string/average"
+                    android:enabled="false"/>
                 <CheckBoxPreference
                     android:defaultValue="false"
                     android:dependency="extra_status_line"
                     android:key="status_line_a1c_dcct"
                     android:summary="@string/ac1_estimation_dcct"
-                    android:title="@string/a1c_dcct" />
+                    android:title="@string/a1c_dcct"
+                    android:enabled="false"/>
                 <CheckBoxPreference
                     android:defaultValue="false"
                     android:dependency="extra_status_line"
                     android:key="status_line_a1c_ifcc"
                     android:summary="@string/ac1_estimation_ifcc"
-                    android:title="@string/a1c_ifcc" />
+                    android:title="@string/a1c_ifcc"
+                    android:enabled="false"/>
                 <CheckBoxPreference
                     android:defaultValue="false"
                     android:dependency="extra_status_line"
                     android:key="status_line_in"
                     android:summary="@string/percentage_in_range"
-                    android:title="@string/in_percentage" />
+                    android:title="@string/in_percentage"
+                    android:enabled="false"/>
                 <CheckBoxPreference
                     android:defaultValue="false"
                     android:dependency="extra_status_line"
                     android:key="status_line_high"
                     android:summary="@string/percentage_above_range"
-                    android:title="@string/high_percentage" />
+                    android:title="@string/high_percentage"
+                    android:enabled="false"/>
                 <CheckBoxPreference
                     android:defaultValue="false"
                     android:dependency="extra_status_line"
                     android:key="status_line_low"
                     android:summary="@string/percentage_below_range"
-                    android:title="@string/low_percentage" />
+                    android:title="@string/low_percentage"
+                    android:enabled="false"/>
                 <CheckBoxPreference
                     android:defaultValue="false"
                     android:dependency="extra_status_line"
                     android:key="status_line_stdev"
                     android:summary="@string/show_standard_deviation"
-                    android:title="@string/standard_deviation" />
+                    android:title="@string/standard_deviation"
+                    android:enabled="false"/>
                 <CheckBoxPreference
                     android:defaultValue="false"
                     android:dependency="extra_status_line"
