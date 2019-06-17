@@ -461,14 +461,14 @@ public class BgSendQueue extends Model {
             extraline.append(String.format("%.2f", lastCalibration.intercept));
         }
 
-        if (prefs.getBoolean("status_line_avg", false)
+        if (/*prefs.getBoolean("status_line_avg", false)
                 || prefs.getBoolean("status_line_a1c_dcct", false)
                 || prefs.getBoolean("status_line_a1c_ifcc", false)
                 || prefs.getBoolean("status_line_in", false)
                 || prefs.getBoolean("status_line_high", false)
                 || prefs.getBoolean("status_line_low", false)
                 || prefs.getBoolean("status_line_stdev", false)
-                || prefs.getBoolean("status_line_carbs", false)
+                || */prefs.getBoolean("status_line_carbs", false)
                 || prefs.getBoolean("status_line_insulin", false)
                 || prefs.getBoolean("status_line_royce_ratio", false)
                 || prefs.getBoolean("status_line_accuracy", false)
@@ -476,7 +476,7 @@ public class BgSendQueue extends Model {
 
             final StatsResult statsResult = new StatsResult(prefs, Pref.getBooleanDefaultFalse("extra_status_stats_24h"));
 
-            if (prefs.getBoolean("status_line_avg", false)) {
+            /*if (prefs.getBoolean("status_line_avg", false)) {
                 if (extraline.length() != 0) extraline.append(' ');
                 extraline.append(statsResult.getAverageUnitised());
             }
@@ -503,7 +503,7 @@ public class BgSendQueue extends Model {
             if (prefs.getBoolean("status_line_stdev", false)) {
                 if (extraline.length() != 0) extraline.append(' ');
                 extraline.append(statsResult.getStdevUnitised());
-            }
+            }*/
             if (prefs.getBoolean("status_line_carbs", false) && prefs.getBoolean("show_wear_treatments", false)) {
                 if (extraline.length() != 0 && extraline.charAt(extraline.length()-1) != ' ') extraline.append(' ');
                 //extraline.append("Carbs: " + statsResult.getTotal_carbs());
