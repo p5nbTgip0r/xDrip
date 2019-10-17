@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.Icon;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
@@ -613,7 +614,8 @@ public class Notifications extends IntentService {
                 .setContentText("xDrip Data collection service is running.")
                 .setSmallIcon(R.drawable.ic_action_communication_invert_colors_on)
                 .setUsesChronometer(false);
-
+        b.setColor(Color.argb(255, 37, 37, 37));
+        b.setColorized(true);
         boolean setLargeIcon = false;
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
